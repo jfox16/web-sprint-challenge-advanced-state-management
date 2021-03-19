@@ -40,7 +40,10 @@ export const reducer = (state = initialState, action) => {
         ...state,
         smurfs: [
           ...state.smurfs,
-          action.payload
+          {
+            ...action.payload,
+            id: Date.now()
+          }
         ]
       }
 

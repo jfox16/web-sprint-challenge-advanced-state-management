@@ -31,7 +31,7 @@ export const fetchSmurfs = () => {
 
 export const addSmurf = (smurf) => {
   return {
-    type: 'ADD_SMURF',
+    type: ADD_SMURF,
     payload: smurf
   }
 }
